@@ -75,6 +75,11 @@ a{
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
+    transition: 0.2s;
+}
+.btn:hover{
+    background: #ff2a78;
+    transform: translateX(10px);
 }
 /* text-colors */
 .black{
@@ -97,8 +102,10 @@ header .container .text-area h1{
     color: white;
     margin-bottom: 27px;
 }
-header .container .text-area img{
+
+header .container .img-area img{
     width: 556.01px;
+    
 }
 /* =============
 players
@@ -112,7 +119,12 @@ players
     padding: 15px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     align-content: center;
+    transition: 0.2s;
+}.player:hover{
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
+    transform: translateY(-10px);
 }
+
 .player .img-area{
     margin-bottom: 16px;
 }
@@ -175,11 +187,11 @@ Live Match
 }
 #live-match .container .team.fcb{
     background: #90274A;
-    box-shadow: 0px 15px 35px rgba(144, 39, 74, 0.2);
+    box-shadow: 0px 15px 35px rgba(144, 39, 74, 0.281);
 }
 #live-match .container .team.fcbayarn{
     background: #EC1349;
-    box-shadow: 0px 15px 35px rgba(236, 19, 73, 0.2);
+    box-shadow: 0px 15px 35px rgba(236, 19, 73, 0.247);
 }
 #live-match .container .team .cup {
     width: 60%;
@@ -196,7 +208,7 @@ Live Match
 }
 .vs h1{
     color: #FF0000;
-    text-shadow: 0px 4px 14px rgba(255, 0, 0, 0.3);
+    text-shadow: 0px 4px 14px #ff000020;
     font-size: 70px;
 }
 hr{
@@ -215,6 +227,9 @@ app area
     font-size: 62px;
     text-align: center;
     margin-bottom: 20px ;
+}
+#app .container .img-area img{
+    animation: wave 3s ease-in-out infinite;
 }
 .downloads{
 text-align: center;
@@ -239,6 +254,20 @@ footer .container .social-links li a img{
     width: 32px;
     margin: 0 7px;
 }
+/*===========================
+ Hover effects + animation
+============================ */
+
+header:hover .container .img-area img{
+ animation: wave 3s ease-in-out infinite;
+ filter: drop-shadow(0 10px 15px #00000010);
+}
+
+@keyframes wave {
+    50%{
+        transform: translateY(-20px);
+    }
+}
 @media screen and (max-width:992px) {
     .container{
         width: 100%;
@@ -259,17 +288,11 @@ footer .container .social-links li a img{
         justify-content: center;
         align-items: center;
     }
-    .cup,.social-links{
-        flex-direction: row;
-    }
 }
+/* ====================
+mobile responsive
+====================== */
 @media screen and (max-width:688px) {
-    .container{
-        width: 100%;
-        box-sizing: border-box;
-        padding:0 15px;
-    }
-
     .grid-col-2,.grid-col-3{
         grid-template-columns: repeat(1,1fr);
     }
