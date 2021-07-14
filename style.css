@@ -299,10 +299,14 @@ mobile responsive
   }
   .flex {
     flex-direction: column;
+    align-items: flex-start;
   }
   #live-match .container {
     padding: 20px;
     grid-template-columns: repeat(1, 1fr);
+  }
+  #live-match .container .team,#live-match .container .team-score .time,#live-match .container .team-score .vs,footer .container{
+    align-items: center;
   }
   #app .container .img-area {
     display: flex;
