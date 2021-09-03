@@ -120,13 +120,12 @@ players
 }
 .player {
   padding: 15px;
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 10px 1px #00000010;
   align-content: center;
   transition: 0.2s;
 }
 .player:hover {
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 
 .player .img-area {
@@ -171,7 +170,7 @@ Live Match
 }
 #live-match .container {
   padding: 45px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 15px 3px #00000010;
   border-radius: 10px;
   grid-column-gap: 70px;
   grid-row-gap: 30px;
@@ -190,11 +189,11 @@ Live Match
 }
 #live-match .container .team.fcb {
   background: #90274a;
-  box-shadow: 0px 15px 35px rgba(144, 39, 74, 0.281);
+  box-shadow: 0px 5px 15px 1px #b1355e30;
 }
 #live-match .container .team.fcbayarn {
   background: #ec1349;
-  box-shadow: 0px 15px 35px rgba(236, 19, 73, 0.247);
+  box-shadow: 0px 5px 15px 1px #ec134930;
 }
 #live-match .container .team .cup {
   width: 60%;
@@ -286,8 +285,32 @@ tablet reaponsive
   #app .container .img-area {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
+  #app .container h1 {
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .downloads {
+    text-align: left;
+}
+footer .container img {
+  width: 236.87px;
+}
+footer .container .social-links li a img {
+  width: 25px;
+}
+.footer-items {
+  margin-bottom: 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.downloads img {
+  width: 40px;
+  margin-right: 20px;
+}
 }
 /* ====================
 mobile responsive
